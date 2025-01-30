@@ -33,7 +33,7 @@ def get_vectorstore(text_chunks):
     vector_store = FAISS.from_texts(text_chunks, embeddings)
     return vector_store
 
- api_key = st.secrets["GOOGLE_API_KEY"]
+os.environ["api_key"] = os.getenv("api_key")
 
 
 def get_conversation_chain(vectorstore):

@@ -32,7 +32,8 @@ def get_vectorstore(text_chunks):
     vector_store = FAISS.from_texts(text_chunks, embeddings)
     return vector_store
 
-api_key = "AIzaSyDx7RgfZPwHgRWXHZ6_e3kNDNdP4YBlYCk"
+os.environ["api_key"] = os.getenv("api_key")
+
 
 def get_conversation_chain(vectorstore):
     llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=api_key)

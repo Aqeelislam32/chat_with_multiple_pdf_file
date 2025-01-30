@@ -31,15 +31,14 @@ css = '''
 }
 
 /* styles.css */
-.stTitle h1 {
-    color: #2c3e50 !important;
-    font-size: 2.5rem !important;
-    text-align: center !important;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2) !important;
-    padding: 1rem !important;
-    border-bottom: 3px solid #3498db !important;
-}
-
+ .stTitle h1 {
+        color: #2c3e50 !important;
+        font-size: 2.5rem !important;
+        text-align: center !important;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.2) !important;
+        padding: 1rem !important;
+        border-bottom: 3px solid #3498db !important;
+    }
 .chat-message {
     padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1rem; display: flex
 }

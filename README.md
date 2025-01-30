@@ -1,6 +1,6 @@
 # Chat with Multiple PDFs - AI Document Assistant
 
-![Project Banner](https://via.placeholder.com/1024x400.png?text=PDF+Chat+Application) <!-- Add your banner image -->
+ 
 
 A powerful AI-powered document assistant that lets you chat with multiple PDF files using cutting-edge AI technologies. Built with Streamlit and powered by Google's Gemini AI.
 

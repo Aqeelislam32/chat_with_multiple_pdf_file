@@ -33,10 +33,11 @@ def get_vectorstore(text_chunks):
     vector_store = FAISS.from_texts(text_chunks, embeddings)
     return vector_store
 
- api_key = st.secrets["GOOGLE_API_KEY"] 
+
 
 
 def get_conversation_chain(vectorstore):
+    api_key = st.secrets["GOOGLE_API_KEY"] 
     llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=api_key)
     memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True)
     conversation_chain = ConversationalRetrievalChain.from_llm(
